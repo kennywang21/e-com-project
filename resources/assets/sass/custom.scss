@@ -1,0 +1,196 @@
+/* custom css */
+$sunflower : rgba(241, 196, 15,.7);
+$midnightblue : rgba(44, 62, 80,.8);
+$carrot : rgba(230, 126, 34,.5);
+$orange : rgba(243, 156, 18,1.0);
+$emerald : rgba(46, 204, 113,1.0);
+$cloud : rgba(236, 240, 241,1.0);
+$asbestos : rgba(127, 140, 141,.7);
+
+/* html and body so that footer always at the bottom of the page*/
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
+  min-height: 100%;
+}
+
+/* header */
+.navbar .nav > .active > a,
+.navbar .nav > .active > a:hover,
+.navbar .nav > .active > a:focus {
+  color: #555555;
+  text-decoration: none;
+  background-color: #e5e5e5;
+  -webkit-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
+     -moz-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
+          box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
+}
+
+.navbar .nav > .active > a {
+    background:none;
+}
+
+.navbar .nav > .active > a,
+.navbar .nav > .active > a:hover,
+.navbar .nav > .active > a:focus {
+ background:none;
+}
+
+.navbar-nav li {
+  transition: background 0.2s;
+}
+
+.navbar-nav li:hover {
+  background-color: $orange;
+}
+
+.navbar-nav li.active:hover {
+  background-color: $sunflower;
+}
+
+.active {
+  background-color: $sunflower;
+  -webkit-box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.125);
+     -moz-box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.125);
+          box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.125);
+}
+
+/* body */
+.container {
+  margin: 48px auto;
+}
+
+.blog-post {
+  padding: 15px;
+  padding-top: 0;
+  margin-bottom: 25px;
+  border: 2.5px solid $orange;
+  border-radius: 15px 0 15px 15px;
+}
+
+.blog-post>h3 {
+  margin-top: 15px;
+}
+
+.blog-post>span.post-date {
+  display: inline-block;
+  position: relative;
+  top: -15px;
+  font-size: 12px;
+  font-weight: lighter;
+}
+
+.blog-post>p {
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+/* form */
+.submit-form {
+  background-color: white;
+  font-weight: lighter;
+  border: 1px solid $orange;
+  color: $orange;
+  transition: background-color .5s;
+}
+
+.submit-form:hover {
+  background-color: $orange;
+  font-weight: lighter;
+  border: 1px solid $orange;
+  color: #fff;
+}
+/* search-bar and search-btn */
+.search-wrapper {
+    padding: 0;
+    margin: 0;
+}
+
+.search-bar {
+  border: 1px solid $orange;
+  border-radius: 30px 0px 0px 30px;
+  box-sizing: border-box;
+  font-weight: lighter;
+  width: 172px;
+  height: 36px;
+}
+
+.search-btn {
+  border: 1px solid $orange;
+  border-radius: 0px 30px 30px 0px;
+  margin-left: -5px;
+  width: 60px;
+  height: 36px;
+  background-color: white;
+  color: $orange;
+  font-weight: lighter;
+  transition: background-color .3s;
+}
+
+@media only screen
+  and (max-width: 767px) {
+    .search-btn {
+        margin-top: -2px;
+    }
+}
+
+.search-btn:hover {
+  border: 1px solid $orange;
+  background-color: $orange;
+  color: white;
+}
+/* left-sidebar */
+@media screen and (min-width: 900px) {
+    .social-slider {
+      width: 50px;
+      height: 100px;
+      position: fixed;
+      left: 0;
+      top: 25vh;//view-height(window) basicly say 25% from window height
+      background-color: $orange;
+      box-shadow: 3px 3px 4px $asbestos;
+    }
+}
+/* footer */
+.footer {
+    position: absolute;
+    margin-bottom: 0;
+    padding-top: 20px;
+    bottom: 0;
+    width: 100%;
+    min-height: 60px;
+    background-color: $emerald;
+    text-align: center;
+}
+
+/////////////////////
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}

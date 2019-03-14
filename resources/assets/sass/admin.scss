@@ -1,0 +1,141 @@
+$deeporange : rgba(255, 87, 34, 1.0);
+$white : #fff;
+$darkblue : rgba(48, 63, 159, 1.0);
+$red : rgba(244, 67, 54, 1.0);
+$darkgrey : rgba(117, 117, 117, .5);
+
+//-----------------
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
+  min-height: 100%;
+}
+
+.navbar {
+  min-height: auto;
+  border: none;
+}
+/* New Posts and Show Posts, Message */
+.top-nav {
+  list-style: none;
+    line-height: normal;
+}
+
+.top-nav>li:first-of-type {
+    margin-left: 5px;
+}
+
+.top-nav>li {
+  display: inline-block;
+  border-radius: 3px 3px 3px 3px;
+  background-color: $deeporange;
+  color: $white;
+  padding: 3px 4px;
+  margin: 5px 1.5px;
+  width: auto;
+  transition: background-color 0.2s;
+}
+
+.top-nav>li>a {
+  font-size: 13px;
+  font-weight: lighter;
+  color: $white;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.top-nav>li:hover, .top-nav>li>a:hover {
+  background-color: $white;
+  color: $deeporange;
+}
+
+.top-nav>li:hover {
+  border: 1px solid $deeporange;
+  padding: 2px 3px;
+}
+//-----------------
+/* Card */
+.card {
+    text-align: left;
+    float: left;
+    margin: 50px 32px;
+    width: 40%;//40% for each cards(2 cards) total 80%
+    box-shadow: 2px 2px 5px $darkgrey;
+    border: 1px solid $darkgrey;
+}
+
+.card ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.card article {
+  margin: 7.5px;
+  padding: 0px 5px 2px 5px;
+}
+
+article h3 {
+  position: relative;
+  top: -10px;
+  margin-bottom: 0;
+}
+
+ header {
+  border: 1px solid $darkgrey;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+}
+
+div.post>ul>li, div.message>ul>li {
+  border: 1px solid $darkgrey;
+  margin: 7.5px;
+  padding: 0px 5px 2px 5px;
+}
+
+
+
+.card .card-post {
+  width: calc(60% - 46px);
+}
+
+.no-latest {
+  text-align: center;
+  font-size: 35px;
+}
+
+.no-latest>span {
+  display: inline-block;
+  margin: 50px auto;
+}
+
+//------------------
+/* Edit */
+.edit {
+  list-style: none;
+}
+
+.edit>li {
+  display: inline-block;
+  width: auto;
+
+}
+
+.edit>li>a {
+  font-size: 13px;
+  font-weight: lighter;
+  color: $darkblue;
+  //text-decoration: none;
+}
+
+.edit>li.danger>a {
+  color: $red;
+}
+//------------------
